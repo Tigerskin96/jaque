@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>App´sWebIC-31V</title>
+<meta charset="utf-8">
+ <meta name="description" content="Este es un documento HTML5">
+ <meta name="keywords" content="HTML, CSS, JavaScript">
+<link rel="stylesheet" href="Css/EstiloForm.css">
+</head>
+<body>
+<form action="Aw.php" method="post">
+<main>
+<h1>Este es mi primer Form</h1>
+<h3>Castellanos Rojo Jaquelin</h3>
+<h4>Procesando datos en php</h4>
+<form action="" class="formulario" id="formulario">
+<div class="formulario__grupo" id="grupo__nombre">
+<label for="usuario" class="formulario__label">Nombre</label>
+<div class="formulario__grupo-input">
+<input type="text" class="formulario__input" name="name" id="name" placeholder="Jaquelin" required="" size="40">
+</div>
+</div>
+<div class="formulario__grupo" id="grupo__apellidos">
+<label for="nombre" class="formulario__label">Apellido Paterno</label>
+<div class="formulario__grupo-input">
+<input type="text" class="formulario__input" name="ap" id="ap" placeholder="Rojo" required="" size="40">
+</div>
+</div>
+<p>Sexo
+		<input type="radio" name="Sexo" id="H" value="H" checked="checked" required=""> <label for="H">H</label>
+		<input type="radio" name="Sexo" id="M" value="M" checked="checked" required=""> <label for="M">M</label>
+		<input type="radio" name="Sexo" id="Otro" value="Otro" checked="checked" required=""> <label for="Otro">Otro</label>
+	</p>
+	<p>
+		<label class="heading">Seleccione su o sus hobbit/s favoritos :</label>
+<div class="checkbox">
+  <label><input type="checkbox" name="check_lista[]" value="Musica">Musica</label>
+</div>
+<div class="checkbox"> 
+  <label><input type="checkbox" name="check_lista[]" value="Deporte">Deporte</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name="check_lista[]" value="Cockail">Cockail</label>
+</div> 
+<div class="checkbox">
+  <label><input type="checkbox" name="check_lista[]" value="Tecnologia">Tecnologia</label>
+</div> 
+<div class="checkbox">
+  <label><input type="checkbox" name="check_lista[]" value="Danza">Danza</label>
+</div>
+	</p>
+	<p>Carrera:
+		<br>
+		<select name="Carrera" required="">
+			<option name="Carrera" value="Informatica">Informatica</option>
+			<option name="Carrera" value="Administracion">Administracion</option>
+			<option name="Carrera" value="Tecnologia ambiental">Tecnologia Ambiental</option>
+		</select>
+	</p>
+	<p>
+		<label for="Fn">Fecha de nacimiento</label><br>
+		<input type="date" id="Fn" name="Fn" required=""></p>
+	<p>
+		<label for"comentario">Comentarios</label><br/>
+		<textarea name="comentario" id="comentario" rows="5" cols="50"></textarea>
+	</p>
+	<p>Foto<br/><input type="file" name="imagen" required=""></p>
+<div class="formulario__grupo formulario__grupo-btn-enviar">
+<form class="forms" action="AW.php" method="post">
+<button type="submit" class="formulario__btn">Enviar</button>
+<br>
+<button type="reset" class="formulario__btn">Reset</button>
+</form>
+</label>
+</div>
+</form>
+</main>
+</body>
+</html>
